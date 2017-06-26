@@ -1,0 +1,21 @@
+body{
+    /*background: url("../images/environments.jpg") no-repeat fixed*/
+    background-color: #79e6ff;
+    padding-top: 50px;
+    
+}
+.customDiv{
+   margin: 3px;
+   
+   /*min-height: 300px;*/
+   /*background-color: #79e6ff;*/
+   text-align: center;
+   font-size: large;
+}
+header{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+   
+
+}

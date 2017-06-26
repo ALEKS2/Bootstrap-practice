@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <title>navigation</title>
+      <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="style/style.css">
+      <script type="text/javascript" src="style/bootstrap.min.js"></script>
+      <script src="js/jquery.js"></script> 
+      <script src="js/bootstrap.min.js"></script>  
+      <script src="js/bootstrap.js"></script> 
+      <script src="js/npm.js"></script> 
+      <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+      <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      
+          <nav class="navbar navbar-default navbar-inverse navbar-fixed-top nav-transparent">
+              <div class="container">
+              <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-target="#navcollapse" data-toggle="collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              </div>
+              <div class="navbar-collapse collapse" id="navcollapse">
+                  <ul class="nav navbar-nav nav-pills">
+                     <li class="active"><a href="#">Home</a></li>
+                     <li><a href="#">Contacts</a></li>
+                     <li><a href="#">About</a></li>
+                     <li><a href="#">products</a></li>
+                  </ul>
+                  <form class="navbar-form navbar-left" role="search">
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="search">
+                      </div>
+                      <button type="submit" class="btn btn-info">search</button>
+                  </form>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><button class="btn btn-info" id="modallaunher">Login</button></li>
+                      <li><a href="#">Subscribe</a></li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container">
+              <div class="row">
+              <div class="col-xs-12" style="height:400px; z-index:-1;">
+                 <div id="imagecarousel" class="carousel slide" data-wrap="true" data-interval="2000" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                         <li data-target="#imagecarousel" data-slide-to="0" class="active"></li>
+                         <li data-target="#imagecarousel" data-slide-to="1"></li>
+                         <li data-target="#imagecarousel" data-slide-to="2"></li>
+                         <li data-target="#imagecarousel" data-slide-to="3"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                         <div class="item active">
+                             <img src="images/parallax.jpg" class="img-responsive" height="400px" width="100%">
+                             <div class="carousel-caption">
+                                 <h3>image title</h3>
+                                 <p>Image description</p>
+                             </div>
+                             
+                         </div>
+                         <div class="item">
+                             <img src="images/5 Eisha.jpg" class="img-responsive" height="400px" width="100%">
+                             <div class="carousel-caption">
+                                 <h4>image title</h4>
+                                 <p>Image description</p>
+                             </div>
+                         </div>
+                         <div class="item">
+                             <img src="images/368.jpg" class="img-responsive" sheight="400px" width="100%">
+                             <div class="carousel-caption">
+                                 <h4>image title</h4>
+                                 <p>Image description</p>
+                             </div>
+                         </div>
+                         <div class="item">
+                             <img src="images/588aaa7ce7bce713882a00c7.jpeg" class="img-responsive" height="400px" width="100%">
+                             <div class="carousel-caption">
+                                 <h4>image title</h4>
+                                 <p>Image description</p>
+                             </div>
+                         </div>
+                     </div>
+                     <a href="#imagecarousel" class="carousel-control left" data-slide="prev">
+                         <span class="glyphicon glyphicon-chevron-left"></span>
+                     </a>
+                     <a href="#imagecarousel" class="carousel-control right" data-slide="next">
+                         <span class="glyphicon glyphicon-chevron-right"></span>
+                     </a>
+                 </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="panel">
+                  <div class="panel-heading">
+                      <a href="#panelbody" class="btn btn-info btn-block" data-toggle="collapse" id="toggle" >Toggle gallery</a>
+                  </div>
+                  <div class="panel-body collapse in" id="panelbody">
+             <div class="col-lg-3 col-md-4 col-sm-6" >
+                 <a href="images/57 3D.jpg" class="thumbnail">
+                 <p>3D</p>
+                 <img src="images/57 3D.jpg" class="img-responsive" style="min-height:250px">
+                 </a>
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6">
+                 <a href="images/spider.jpg" class="thumbnail" >
+                 <p>spider</p>
+                 <img src="images/spider.jpg" class="img-responsive hidden-print" style="min-height:250px">
+                  </a>
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6">
+                 <a href="images/parallax.jpg" class="thumbnail">
+                 <p>parallax</p>
+                 <img src="images/parallax.jpg" class="img-responsive img-rounded hidden-print" style="min-height:250px">
+                  </a>
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6">
+                 <a href="images/environment.jpg" class="thumbnail">
+                 <p>environment</p>
+                 <img src="images/environment.jpg" class="img-responsive img-rounded" style="min-height:250px">
+                  </a>
+             </div>
+                  </div>
+          </div>
+              </div>
+             
+          <button class="btn btn-primary" id="toggs"> toggle</button>
+          <div class="jumbotron">
+              <p>just less than a year ago), I stated that Android was ranked second in the U.S. smartphone
+market, second to Research In Motion’s (RIM) BlackBerry, and overtaking Apple’s iPhone</p>
+          </div>
+          <div class="dropdown">
+             <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">dropdown <span class="caret"></span></button>
+             
+             <ul class="dropdown-menu">
+                 <li>uganda</li>
+                 <li>uganda</li>
+                 <li>uganda</li>
+                 <li>uganda</li>
+             </ul>
+          </div>
+          <h1>accordion</h1>
+          <div class="panel-group" id="accordion">
+              <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                          <a href="#pbody1" data-toggle="collapse" data-parent="#accordion">Afriac</a>
+                      </h4>
+                  </div>
+                  <div id="pbody1" class="panel-collapse collapse">
+                    <div class="panel-body" >
+                      <ul >
+                         <li>Uganda</li>
+                         <li>kenya</li>
+                         <li>DRC</li>
+                      </ul>
+                  </div>
+                  </div>
+              </div>
+              <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                          <a href="#pbody2" data-toggle="collapse" data-parent="#accordion">asia</a>
+                      </h4>
+                  </div>
+                  <div id="pbody2" class="panel-collapse collapse">
+                    <div class="panel-body" >
+                      <ul >
+                         <li>Korea</li>
+                         <li>Japan</li>
+                         <li>China</li>
+                      </ul>
+                  </div>
+                  </div>
+              </div>
+              <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                          <a href="#pbody3" data-toggle="collapse" data-parent="#accordion">America</a>
+                      </h4>
+                  </div>
+                  <div id="pbody3" class="panel-collapse collapse">
+                    <div class="panel-body" >
+                      <ul >
+                         <li>USA</li>
+                         <li>Meico</li>
+                         <li>Brazil</li>
+                      </ul>
+                  </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="panel-group" id="accordion1">
+              <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                          <span class="glyphicon glyphicon-menu-down"></span>
+                          <a href="#ibody1" data-toggle="collapse" data-parent="#accordion1">image 3</a>
+                      </h4>
+                  </div>
+                  <div id="ibody1" class="panel-collapse collapse">
+                    <div class="panel-body" >
+                     <div class="col-lg-3 col-md-4 col-sm-6" >
+                 <a href="images/57 3D.jpg" class="thumbnail">
+                 <p>3D</p>
+                 <img src="images/57 3D.jpg" class="img-responsive" style="min-height:250px">
+                 </a>
+             </div>
+                  </div>
+                  </div>
+              </div>
+              <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                          <span class="glyphicon glyphicon-menu-down"></span>
+                          <a href="#ibody2" data-toggle="collapse" data-parent="#accordion1">image2</a>
+                      </h4>
+                  </div>
+                  <div id="ibody2" class="panel-collapse collapse">
+                    <div class="panel-body" >
+                      <div class="col-lg-3 col-md-4 col-sm-6">
+                 <a href="images/parallax.jpg" class="thumbnail">
+                 <p>parallax</p>
+                 <img src="images/parallax.jpg" class="img-responsive img-rounded hidden-print" style="min-height:250px">
+                  </a>
+             </div>
+                  </div>
+                  </div>
+              </div>
+              <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                          <span class="glyphicon glyphicon-menu-down"></span>
+                          <a href="#ibody3" data-toggle="collapse" data-parent="#accordion1">image3</a>
+                      </h4>
+                  </div>
+                  <div id="ibody3" class="panel-collapse collapse">
+                    <div class="panel-body" >
+                     <div class="col-lg-3 col-md-4 col-sm-6">
+                 <a href="images/parallax.jpg" class="thumbnail">
+                 <p>parallax</p>
+                 <img src="images/parallax.jpg" class="img-responsive img-rounded hidden-print" style="min-height:250px">
+                  </a>
+             </div>
+                  </div>
+                  </div>
+                  
+                  
+              </div>
+              <h1>navs</h1>
+              <ul class="nav nav-pills">
+                      <li  class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                      <li><a href="#" ><span class="glyphicon "></span>Contacts</a></li>
+                      <li><a href="#" ><span class="glyphicon "></span>About</a></li>
+                  </ul>
+                  <ul class="nav nav-tabs">
+                      <li class="active"><a href="#" ><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                      <li><a href="#" ><span class="glyphicon "></span>Contacts</a></li>
+                      <li><a href="#" ><span class="glyphicon "></span>About</a></li>
+                  </ul>
+                  <ul class="nav nav-pills nav-stacked">
+                      <li class="active"><a href="#" ><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                      <li><a href="#" ><span class="glyphicon "></span>Contacts</a></li>
+                      <li><a href="#" ><span class="glyphicon "></span>About</a></li>
+                  </ul>
+                  <ul class="nav nav-pills nav-justified">
+                      <li  class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                      <li><a href="#" ><span class="glyphicon "></span>Contacts</a></li>
+                      <li><a href="#" ><span class="glyphicon "></span>About</a></li>
+                  </ul>
+          </div>
+          <h1>media objects</h1>
+          <ul class="media-list">
+          <li class="media">
+              <div class="media-left media-top">
+                  <a href="">
+                      <img class="media-object" src="images/MeganFox.jpg" alt="megan" width="100px" height="100px">
+                  </a>
+              </div>
+              <div class="media-body">
+                  <h4 class="media-hesding">Megan <small>july 25 2017 </small></h4>
+                  <p>Welcome to the world of Android! When I was writing my first book on Android (which was
+just less than a year ago), I stated that Android was ranked second in the U.S. smartphone
+market, second to Research In Motion’sWelcome to the world of Android! When I was writing my first book on Android (which was
+</p>
+                 <div class="media-left media-top">
+                  <a href="">
+                      <img class="media-object" src="images/MeganFox.jpg" alt="megan" width="100px" height="100px">
+                  </a>
+              </div>
+              <div class="media-body">
+                  <h4 class="media-hesding">Megan <small>july 25 2017 </small></h4>
+                  <p>Welcome to the world of Android! When I was writing my first book on Android (which was
+Welcome to the world of Android! When I was writing my first book on Android (which was
+just less than a year ago), I stated that Android was ranked second in the U.S. smartphone
+market, second to Research In Motion’s</p>
+                 <div class="media-left media-top">
+                  <a href="">
+                      <img class="media-object" src="images/MeganFox.jpg" alt="megan" width="100px" height="100px">
+                  </a>
+              </div>
+              <div class="media-body">
+                  <h4 class="media-hesding">Megan <small>july 25 2017 </small></h4>
+                  <p>Welcome to the world of Android! When I was writing my first book on Android (which was
+Welcome to the world of Android! When I was writing my first book on Android (which was
+just less than a year ago), I stated that Android was ranked second in the U.S. smartphone
+market, second to Research In Motion’s</p>
+
+              </div>
+
+              </div>
+              </div>
+          </li>
+          <li class="media">
+              <div class="media-left media-top">
+                  <a href="">
+                      <img class="media-object" src="images/MeganFox.jpg" alt="megan" width="100px" height="100px">
+                  </a>
+              </div>
+              <div class="media-body">
+                  <h4 class="media-hesding">Megan <small>july 25 2017 </small></h4>
+                  <p>Welcome to the world of Android! When I was writing my first book on Android (which was
+Welcome to the world of Android! When I was writing my first book on Android (which was
+just less than a year ago), I stated that Android was ranked second in the U.S. smartphone
+market, second to Research In Motion’s</p>
+                 
+          </li>
+          </ul>
+          <h1>pagination</h1>
+          <ul class="pager">
+              <li><a href="">&larr; previous</a></li>
+              <li><a href="">next &rarr;</a></li>
+          </ul>
+          <ul class="pager">
+              <li class="previous"><a href="">&larr; previous</a></li>
+              <li class="next"><a href="">next &rarr;</a></li>
+          </ul>
+          <ul class="pagination">
+              <li><a href="#">&laquo;</a></li>
+              <li><a href="#">1</a></li>
+              <li class="active"><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">&raquo;</a></li>
+          </ul>
+          <h1>modals</h1>
+          <button class="btn btn-primary pull-right" id="modalaunher">Login</button>
+          <div class="modal fade" id="logmodal" tabindex="-1" data-keyboard="false" data-backdrop="static">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Login</h4>
+                      </div>
+                      <div class="modal-body">
+                          <form>
+                              <div class="form-group">
+                                  <label for="inputusername">Username</label>
+                                  <input type="text" class="form-control" placeholder="username">
+                              </div>
+                              <div class="form-group">
+                                  <label for="inputpassword">password</label>
+                                  <input type="password" class="form-control" placeholder="password">
+                              </div>
+                              <input type="submit" value="Login" class="btn btn-primary">
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                          <button class="btn btn-primary" data-dismiss="modal">Dismiss</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <h1>Tab plugin</h1>
+          <ul class="nav nav-tabs">
+              <li class="active"><a href="#hometab" data-toggle="tab">Home</a></li>
+              <li><a href="#abouttab" data-toggle="tab">About</a></li>
+          </ul>
+          <div class="tab-content">
+              <div id="hometab" class="tab-pane active fade in">
+                  <h1>home</h1>
+              </div>
+              <div id="abouttab" class="tab-pane fade">
+                  <h1>About us</h1>
+              </div>
+          </div>
+          <h1>Tooltips</h1>
+          <button class="btn btn-danger btn-lg" data-toggle="tooltip">hover and see</button>
+          <h2>popover</h2>
+          <button class="btn btn-primary btn-lg" data-toggle="popover" data-html="true" title="<h2>aleks</h2>" data-content="<img src='images/parallax.jpg' class='img-responsive img-rounded' style='min-height:250px'>" id="btnpop">click here</button>
+          <h2>alert</h2>
+          <button class="btn btn-danger" id="alerter">Alert</button>
+          <div id="err" class="alert alert-danger collapse">
+              <a href="#" class="close" data-dismiss="alert">&times;</a>
+              <strong>Error!</strong>there is a pronblem loging in
+          </div>
+          
+          </div>       
+      </div>
+      <div class="container">
+           
+          <div class="row">
+              <abbr title="Aleksy's Photo Gallery">APG</abbr>
+              <u class="h1"> what holy heck is going on here!</u>
+              <s class="h1"> what holy heck is going on here!</s>
+              <u class="h1"> what holy <sup>heck</sup> is going <sub>on</sub> here!</u>
+              <mark class="h1 text-justify text-uppercase"> what holy heck is going on here!</mark>
+          </div>
+          <div class="row">
+               <div class=col-md-6>
+                   <blockquote class="blockquote-reverse">
+                       <p>lets do it now</p>
+                       <footer>by king aleks</footer>
+                   </blockquote>
+                   <ul>
+                       <li> kampala</li>
+                       <li>lagos</li>
+                       <li>Nirobi</li>
+                       <li> namanve</li>
+
+                   </ul>
+                   <ul class="list-unstyled">
+                       <li> kampala</li>
+                       <li>lagos</li>
+                       <li>Nirobi</li>
+                       <li> namanve</li>
+
+                   </ul>
+                   <ul class="list-inline">
+                       <li> kampala</li>
+                       <li>lagos</li>
+                       <li>Nirobi</li>
+                       <li> namanve</li>
+
+                   </ul>
+                   <dl>
+                       <dt> kampala</dt>
+                       <dd>That is uganda</dd>
+                       <dt>lagos</dt>
+                       <dd>I think that is nigeria</dd>
+                       <dt>Nirobi</dt>
+                       <dd>Automati kenya</dd>
+                       <dt> namanve</dt>
+                       <dd>Be nervous about this</dd>
+
+                   </dl>
+                   <dl class="dl-horizontal">
+                       <dt> kampala</dt>
+                       <dd>That is uganda</dd>
+                       <dt>lagos</dt>
+                       <dd>I think that is nigeria</dd>
+                       <dt>Nirobi</dt>
+                       <dd>Automati kenya</dd>
+                       <dt> namanve</dt>
+                       <dd>Be nervous about this</dd>
+
+                   </dl>
+                   <h2>list groups</h2>
+                   <ul class="list-group">
+                       <li class="list-group-item">Uganda<span class="badge">USH</span></li>
+                       <li class="list-group-item">Tanzania<span class="badge">TSH</span></li>
+                       <li class="list-group-item">Kenya<span class="badge">KSH</span></li>
+                       <li class="list-group-item"><span class="badge">USD</span>Mpigi</li>
+                   </ul>
+                   <h2>lists with hyper links</h2>
+                   <div class="list-group">
+                       <a href="http://aleks.com" class="list-group-item list-group-item-danger"> Microsoft<span class="badge"><img src="images/22 Android.jpg" class="img-responsive" width="20px" height="20px"></span></a>
+                       <a href="http://aleks.com" class="list-group-item list-group-item-info"> Facebook</a>
+                       <a href="http://aleks.com" class="list-group-item list-group-item-success"> Apple Icloud</a>
+                       <a href="http://aleks.com" class="list-group-item list-group-item-warning"> Apple Icloud</a>
+                   </div>
+                   <h2>highlighted listg-groups</h2>
+                   <div class="list-group">
+                       <a href="http://aleks.com" class="list-group-item disabled" title="this is disabled"> Microsoft<span class="badge"><img src="images/22 Android.jpg" class="img-responsive" width="20px" height="20px"></span></a>
+                       <a href="http://aleks.com" class="list-group-item active" title="this is active"> Facebook</a>
+                       <a href="http://aleks.com" class="list-group-item"> Apple Icloud</a>
+                       <a href="http://aleks.com" class="list-group-item active" title="this is active"> Apple Icloud</a>
+                   </div>
+                   <h2>list groups with custome data</h2>
+                   <div class="list-group">
+                       <a href="" class="list-group-item" > Microsoft
+                           <h4 class="list-group-item-heading">about aleks</h4>
+                           <p class="list-group-item-text"> he is a dash gentleman from dash</p>
+                       </a>
+                       <a href="" class="list-group-item" > apple
+                           <h4 class="list-group-item-heading">about aleks</h4>
+                           <p class="list-group-item-text"> he is a dash gentleman from dash</p>
+                       </a>
+                       <a href="" class="list-group-item" > Aleks
+                           <h4 class="list-group-item-heading">about aleks</h4>
+                           <p class="list-group-item-text"> he is a dash gentleman from dash</p>
+                       </a>
+                       <p>we have <kbd>ctrl</kbd>and<kbd>shift</kbd></p>
+                   </div>
+                   <h2>Tables</h2>
+                   <table class="table table-striped table-bordered table-hover table-condensed table-responsive">
+                       <thead>
+                           <th>Name</th>
+                           <th>Phone</th>
+                           <th>Email</th>
+                       </thead>
+                       <tr>
+                           <td>Aleks</td>
+                           <td>0756534273</td>
+                           <td>aleksnyombi@gmail.com</td>
+                       </tr>
+                       <tr>
+                           <td>mark</td>
+                           <td>07354352</td>
+                           <td>mark@gmail.com</td>
+                       </tr>
+                       <tr>
+                           <td>Lucas</td>
+                           <td>0743534273</td>
+                           <td>lucas@gmail.com</td>
+                       </tr>
+                       <tr>
+                           <td>merery</td>
+                           <td>0756536473</td>
+                           <td>merery@gmail.com</td>
+                       </tr>
+                   </table>
+                   <button class="btn btn-danger btn-lg btn-block"><span class="glyphicon glyphicon-search"></span> search</button>
+               </div>
+               <div class="col-md-6"></div>
+               <h2>dropdown menu</h2>
+               <div class="dropdown">
+                   <a class="dropdown-toggle" data-toggle="dropdown">Dropdown<span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                       <li><a href="#"></a> jshsdd</li>
+                       <li><a href="#"></a> jshsdd</li>
+                       <li><a href="#"></a> jshsdd</li>
+                   </ul>
+              </div>
+              <h2>Button groups</h2>
+              <div class="btn-group">
+              <button class="btn btn-primary">aleks</button>
+              <button class="btn btn-danger">Nombi</button>
+              <button class="btn btn-primary">SCIT</button>
+              <button class="btn btn-danger">mark</button>
+              <button class="btn btn-primary">USA</button>
+              <button class="btn btn-danger">Uganda</button>
+              <button class="btn btn-primary">Kadaaga</button>
+              </div>
+              <div class="btn-group btn-group-lg">
+              <button class="btn btn-primary">aleks</button>
+              <button class="btn btn-danger">Nombi</button>
+              </div>
+              <div class="btn-group btn-group-sm">
+              <button class="btn btn-primary">SCIT</button>
+              <button class="btn btn-danger">mark</button>
+              <button class="btn btn-primary">USA</button>
+              </div>
+              <div class="btn-group btn-group-md">
+              <button class="btn btn-danger">Uganda</button>
+              <button class="btn btn-primary">Kadaaga</button>
+              </div>
+              <div class="btn-group btn-group-xs">
+              <button class="btn btn-danger">Uganda</button>
+              <button class="btn btn-primary">Kadaaga</button>
+              </div>
+               <h2>nested button groups</h2>
+              <div class="btn-group btn-group-lg">
+              <button class="btn btn-primary">aleks</button>
+              <button class="btn btn-danger">Nombi</button>
+              <div class="btn-group btn-group-xs">
+              <button class="btn btn-danger">Uganda</button>
+              <button class="btn btn-primary">Kadaaga</button>
+              </div>
+              </div>
+              <h2>vertical buttons</h2>
+              <div class="btn-group btn-group-lg btn-group-vertical">
+              <button class="btn btn-primary">aleks</button>
+              <button class="btn btn-danger">Nombi</button>
+              <button class="btn btn-primary">SCIT</button>
+              </div>
+              <h2>Split button dropdown</h2>
+              <div class="btn-group">
+                  <button class="btn btn-primary">Uganda</button>
+                  <button class="btn btn-danger dropdown-toggle">
+                      <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">Uganda</a></li>
+                      <li><a href="#">Uganda</a></li>
+                      <li><a href="#">Uganda</a></li>
+                  </ul>
+                  <h2>Forms</h2>
+                  <form>
+                      <div class="form-group">
+                      <label>Username</label>
+                      <input class="form-control" type="text" placeholder="Username">
+                      
+                      <label>password</label>
+                      <input class="form-control" type="password" placeholder="password">
+                      <input class="btn btn-primary" type="submit" value="Login">
+                      </div>
+                  </form>
+                  <form class="form-inline">
+                      <label class="control-lable">Username</label>
+                      <input class="form-control" type="text" placeholder="Username">
+                      <label class="control-lable">password</label>
+                      <input class="form-control" type="password" placeholder="password">
+                      <input class="btn btn-primary" type="submit" value="Login">
+                  </form>
+                  <form class="form-horizontal">
+                      <div class="form-group">
+                          <label class="control-lable col-sm-2">Username</label>
+                          <div class="col-sm-10">
+                          <input class="form-control" type="text" placeholder="Username">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                      <label class="control-lable col-sm-2">password</label>
+                      <div class="col-sm-10">
+                      <input class="form-control" type="password" placeholder="password">
+                      </div>
+                      </div>
+                      <input class="btn btn-primary col-sm-offset-2" type="submit" value="Login">
+                  </form>
+                  <h2>Input groups</h2>
+                  <div class="input-group">
+                      <span class="input-group-addon">
+                          $
+                      </span>
+                      <input class="form-control" type="text" placeholder="Amount">
+                  </div><br><hr>
+                  <div class="input-group">
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-user"></span>
+                      </span>
+                      <input class="form-control" type="text" placeholder="Amount">
+                      
+                  </div>
+                  <hr>
+                  <div class="input-group">
+                      <input type="text" class="form-control">
+                      <span class="input-group-btn">
+                          <input class="btn btn-danger" type="button" value="search">
+                      </span>
+                  </div><hr>
+                  <div class="input-group">
+                      <input type="text" class="form-control">
+                      <span class="input-group-btn">
+                          <input class="btn btn-danger" type="button" value="copy">
+                          <input class="btn btn-primary" type="button" value="cut">
+                          <input class="btn btn-danger" type="button" value="paste">
+                      </span>
+                  </div>
+                  <h1>Bread Crumb</h1>
+                  <ol class="breadcrumb">
+                      <li class="active"><a href="#">Home</a></li>
+                      <li><a href="#">services</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">all of it</a></li>
+                  </ol>
+                  <hr>
+                  <h1>panels</h1>
+                  <div class="panel panel-primary">
+                      <div class="panel-heading">
+                          <h2 class="panel-title">Android</h2>
+                      </div>
+                      <div class="panel-body">
+                          
+                              Welcome to the world of Android! When I was writing my first book on Android (which was
+just less than a year ago), I stated that Android was ranked second in the U.S. smartphone
+market, second to Research In Motion’s (RIM) BlackBerry, and overtaking Apple’s iPhone.
+Shortly after the book went to press, comScore (a global leader in measuring the digital world
+and the preferred source of digital marketing intelligence) reported that Android has overtaken
+BlackBerry as the most popular smartphone platform in the U.S.
+                          
+                      </div>
+                      <table class="table table-striped table-bordered table-hover table-condensed table-responsive">
+                       <thead>
+                           <th>Name</th>
+                           <th>Phone</th>
+                           <th>Email</th>
+                       </thead>
+                       <tr>
+                           <td>Aleks</td>
+                           <td>0756534273</td>
+                           <td>aleksnyombi@gmail.com</td>
+                       </tr>
+                       <tr>
+                           <td>mark</td>
+                           <td>07354352</td>
+                           <td>mark@gmail.com</td>
+                       </tr>
+                       <tr>
+                           <td>Lucas</td>
+                           <td>0743534273</td>
+                           <td>lucas@gmail.com</td>
+                       </tr>
+                       <tr>
+                           <td>merery</td>
+                           <td>0756536473</td>
+                           <td>merery@gmail.com</td>
+                       </tr>
+                   </table>
+                      <div class="panel-footer">
+                          That is it
+                      </div>
+                  </div>
+                  
+                  
+              </div>
+              <hr>
+              <h2>well</h2>
+              <div class="well">
+                  just less than a year ago), I stated that Android was ranked second in the U.S. smartphone
+market, second to Research In Motion’s (RIM) BlackBerry, and overtaking Apple’s iPhone.
+              </div>
+              <div class="well well-lg">
+                  just less than a year ago), I stated that Android was ranked second in the U.S. smartphone
+market, second to Research In Motion’s (RIM) BlackBerry, and overtaking Apple’s iPhone.
+              </div>
+              <div class="well well-sm">
+                  just less than a year ago), I stated that Android was ranked second in the U.S. smartphone
+market, second to Research In Motion’s (RIM) BlackBerry, and overtaking Apple’s iPhone.
+              </div>
+              <h1>lables</h1>
+              <div class="well">
+                 <h1>countries</h1>
+                 <hr>
+                 <h3>Uganda<span class="label label-primary">ugandan</span></h3>
+                 <h3>kenys <span class="label label-primary">kenyan</span></h3>
+                 <h3>korean <span class="label label-primary">sudanie</span></h3>
+                 <h3>china <span class="label label-primary">chinie</span></h3>
+                 <h3>japan <span class="label label-primary">japanie</span></h3>
+              </div>
+              <h1>badges</h1>
+                <div class="well">
+                    <a href="#">messages<span class="badge badge-info">25</span></a><br>
+                    <a href="#">inbox<span class="badge badge-info">34</span></a><br>
+                    <a href="#">results<span class="badge badge-info">15</span></a><br>
+                    <a href="#">people<span class="badge badge-info">95</span></a><br>
+                </div>
+                 <div class="well">
+                    <button class="btn btn-primary">messages<span class="badge badge-info">25</span></button>
+                    <button class="btn btn-info">inbox<span class="badge badge-info">34</span></button>
+                    <button class="btn btn-danger">results<span class="badge badge-info">15</span></button>
+                    <button class="btn btn-success">people<span class="badge badge-info">95</span></button>
+                </div>
+                <h1>Progress bars</h1>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" style="width:80%">
+                        80%
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped active" style="width:5%; min-width:10%">
+                        5%
+                    </div>
+                </div>
+                <div class="progress">
+                     <div class="progress-bar progress-bar-striped active" style="width:80%">
+                        80%
+                    </div>
+                     <div class="progress-bar progress-bar-info progress-bar-striped active" style="width:5%; min-width:10%">
+                        5%
+                    </div>
+                </div>
+                <h1>Jumbotron</h1>
+                <div class="jumbotron">
+                    <h1>About Aleks</h1>
+                    <p>just less than a year ago), I stated that Android was ranked second in the U.S. smartphone
+market, second to Research In Motion’s (RIM) BlackBerry, and overtaking Apple’s iPhone.</p>
+                    <p><a class="btn btn-lg btn-primary">Go home</a></p>
+                </div>
+            </div>
+      </div>
+      <script>
+          $(function(){
+              $("#toggs").click(function(){
+                  $(".jumbotron").toggle("slow");
+              });
+              $("#toggle").click(function(){
+                  $("#panelbody").collapse();
+              });
+              $(".dropdown-toggle").click(function(){
+                  $(".dropdown-menu").toggle();
+              });
+              $(".collapse").on("hidden.bs.collapse",function(){
+                  $(this).parent().find(".glyphicon").removeClass("glyphicon-menu-up").addClass("glyphicon-menu-down");
+              });
+               $(".collapse").on("shown.bs.collapse",function(){
+                  $(this).parent().find(".glyphicon").removeClass("glyphicon-menu-down").addClass("glyphicon-menu-up");
+              });
+              $("#modallaunher").click(function(){
+                 $("#logmodal").modal("show");
+              });
+              $("#modalaunher").click(function(){
+                 $("#logmodal").modal("show");
+              });
+              $('[data-toggle="tooltip"]').tooltip({
+                  title:'<h4>hey there</h4>',
+                  placement:'right',
+                  html:true,
+                  animation:true,
+                  delay:500,
+                  trigger:"click"
+              });
+              $("#btnpop").popover();
+              $("#alerter").click(function(){
+                  $("#err").toggle();
+              });
+            
+          });
+      </script>
+      
+  </body>
